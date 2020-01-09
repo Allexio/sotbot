@@ -1,0 +1,47 @@
+[
+    {
+        "name":"Sailor's Bounty",
+        "location":{
+            "region":"Shores of Plenty",
+            "coordinates":"B-4",
+        },
+        "NPCs": [],
+        "animals":{
+            "snake": True,
+            "chicken": True,
+            "pig": True,
+        },
+        "type": "wild",
+        "is_charted": True,
+    },
+    {
+        "name":"Keel Haul Fort",
+        "location":{
+            "region":"Shores of Plenty",
+            "coordinates":"C-7",
+        },
+        "NPCs": [],
+        "type": "fort",
+        "is_charted": True,
+    },
+    {
+        "name": "Sanctuary Outpost",
+        "location":{
+            "region":"Shores of Plenty",
+            "coordinates":"C-7",
+        },
+        "NPCs": [],
+        "type": "outpost",
+        "is_charted": True,
+    },
+    {
+        "name": "Spoils of Plenty Store",
+        "location":{
+            "region": "Shores of Plenty",
+            "coordinates": "B-7",
+        },
+        "NPCs": [],
+        "type": "seapost",
+        "is_charted": True,
+    }
+]
