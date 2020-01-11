@@ -1,10 +1,12 @@
-# sotbot
-A sea of thieves discord bot that lets you store information in a database and then query it back to explore at your own pace.
+# SotBot
+A Sea of Thieves discord bot that lets users explore SoT at their own pace and store charted islands in a database, that they can then query at a time of their choosing.
+Such information includes the islands, their locations, their type, which animals live on them, which NPCs live on them.
+The database starts off empty and grows as players make their discoveries and chart out the map.
 ## installation:
-### prerequisites:
+### Prerequisites:
 * latest python3 (https://www.python.org/downloads/)
 * latest discord.py (```pip install discord.py```)
-### how to use
+### How to set up:
 * create an application on discord https://discordapp.com/developers/applications/ (takes two clicks)
 * make a bot for the application you create (on the left click on "bot" and then click on "add bot")
 * save that bot's token as an environment variable on your system called "discord_sot_token" (you might need to restart after this!!)
