@@ -13,4 +13,6 @@ A sea of thieves discord bot that lets you store information in a database and t
 * run ```python bot.py``` in your favourite command line
 * (optional) if you want to change the prefix, edit the PREFIX variable in bot.py 
     ie. change it from ```PREFIX = "sot"``` to ```PREFIX = "[whatever prefix you want here]"```
-* profit!
+* You are now free to use commands in your discord to interact with the bot!
+## General Use:
+Use the ```help``` command for a list of commands that you can execute and what they do.
