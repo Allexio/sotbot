@@ -7,7 +7,7 @@ A sea of thieves discord bot that lets you store information in a database and t
 ### how to use
 * create a bot on discord https://discordapp.com/developers/applications/
 * make a user for that bot you create
-* save that token as an environment variable on your system called "discord_sot_token" (you might need to restart after this!!)
+* save that user's token as an environment variable on your system called "discord_sot_token" (you might need to restart after this!!)
 * invite the bot to your server
 * download contents of this git
 * run ```python bot.py```
