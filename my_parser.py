@@ -21,10 +21,31 @@ def parser(command):
             return inter.add_info_to_island(args[1], args[0])
         else:
             return inter.add_island(command)
-        
+    
+    elif command == "help":
+        return help_print()
+
     elif command == "map":
         return inter.map_printer()
 
     return inter.island_searcher(command)
     
     #return "Couldn't recognise your command. :skull:"
+
+def help_print():
+    help_message = """
+    Sotbot is designed to help people chart their own maps of sea of thieves.
+The database starts empty and as you go along, you can add more information to complete it.
+    ```add [island name]```
+        Adds a new island to the database
+    ```add [pig/snake/chicken] to [island name]```
+        Adds an animal type to an island already present in the database.
+    ```add [coordinates] to [island name]```
+        Adds coordinates to an island already present in the database.
+    ```[island name]```
+        Prints information about a specific island.
+    ```map```
+        Displays a map of currently discovered islands.
+        O = Outpost/S = Seapost/F = Skeleton Fort/W = Wild island (everything else)\n
+    """
+    return help_message
