@@ -10,7 +10,7 @@ A sea of thieves discord bot that lets you store information in a database and t
 * save that bot's token as an environment variable on your system called "discord_sot_token" (you might need to restart after this!!)
 * invite the bot to your server
 * download contents of this git
-* run ```python bot.py```
+* run ```python bot.py``` in your favourite command line
 * (optional) if you want to change the prefix, edit the PREFIX variable in bot.py 
     ie. change it from ```PREFIX = "sot"``` to ```PREFIX = "[whatever prefix you want here]"```
 * profit!
