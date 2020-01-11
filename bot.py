@@ -1,7 +1,7 @@
 import os
 import discord
 import my_parser
-KEYWORD = "sot"
+PREFIX = "sot"
 
 client = discord.Client()
 
@@ -14,8 +14,8 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith(KEYWORD):
-        await message.channel.send(my_parser.parser(message.content.replace(KEYWORD, "")))
+    if message.content.startswith(PREFIX):
+        await message.channel.send(my_parser.parser(message.content.replace(PREFIX, "")))
 
 def startup():
     client.run(os.getenv("discord_sot_token"))
