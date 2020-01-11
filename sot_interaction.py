@@ -3,6 +3,44 @@ import ast
 def object_searcher(object_name):
     pass
 
+def map_printer():
+    data = load_data()
+    map = [[" " for i in range(27)] for j in range(27)]
+    #coord_dict = {}
+    for island in data:
+        if island["location"]["coordinates"] is not None:
+            # coordinates format: [A, 1]
+            coords = island["location"]["coordinates"].split("-")
+            # coordinates format: [1, 1]
+            num_coords = [int(ord(coords[0])-64),int(coords[1])]
+            # type format: "W" or "O" or "F" or "S"
+            type_shorthand = island["type"][:1].upper()
+            map[num_coords[0]][num_coords[1]] = type_shorthand
+    
+    # print out the map
+    map_print = "```\n"
+    for y in range(0,27):
+        for x in range(0, 27):
+            if y == 0:
+                if x != 0:
+                    map_print += chr(x+64)
+                else:
+                    map_print += "__"
+            elif x == 0:
+                if y<10:
+                    map_print += " "
+                map_print += str(y)
+
+            else:
+                map_print += map[x][y]
+            map_print += "|"
+            if x == 26:
+                map_print += "\n"
+    map_print += u"\u203E"*55
+    map_print += "```"
+    return map_print
+      
+
 def animal_searcher(animal, coordinates=None):
     if animal not in ["pig", "snake", "chicken"]:
         return "Did not recognise animal. :skull:"
@@ -59,7 +97,7 @@ def island_searcher(island_name):
 
 def add_island(island_name):
     """ adds given island to database with proper type based on name suffix """
-    if "Couldn't" in island_searcher(island_name):
+    if "Couldn't" not in island_searcher(island_name):
         return "The island you are trying to add already exists. :skull:"
     fort_types = ["fort", "fortress", "keep", "stronghold", "watchtower", "camp"]
     seapost_types = ["store", "emporium", "bazaar", "Spoils", "traders", "trading post", "seapost"]

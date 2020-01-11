@@ -22,6 +22,9 @@ def parser(command):
         else:
             return inter.add_island(command)
         
+    elif command == "map":
+        return inter.map_printer()
+
     return inter.island_searcher(command)
     
     #return "Couldn't recognise your command. :skull:"
