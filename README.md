@@ -12,9 +12,9 @@ The database starts off empty and grows as players make their discoveries and ch
 * save that bot's token as an environment variable on your system called "discord_sot_token" (you might need to restart after this!!)
 * invite the bot to your server
 * download contents of this git
-* run ```python bot.py``` in your favourite command line
 * (optional) if you want to change the prefix, edit the PREFIX variable in bot.py 
     ie. change it from ```PREFIX = "sot"``` to ```PREFIX = "[whatever prefix you want here]"```
+* run ```python bot.py``` in your favourite command line
 * You are now free to use commands in your discord to interact with the bot!
 ## General Use:
 Use the ```help``` command for a list of commands that you can execute and what they do.
