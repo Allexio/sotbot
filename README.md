@@ -2,7 +2,7 @@
 A sea of thieves discord bot that lets you store information in a database and then query it back to explore at your own pace.
 ## installation:
 ### prerequisites:
-* latest python3
+* latest python3 (https://www.python.org/downloads/)
 * latest discord.py (```pip install discord.py```)
 ### how to use
 * create a bot on discord https://discordapp.com/developers/applications/
