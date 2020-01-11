@@ -28,9 +28,10 @@ def parser(command):
     elif command == "map":
         return inter.map_printer()
 
+    elif command == "about":
+        return about_print()
+
     return inter.island_searcher(command)
-    
-    #return "Couldn't recognise your command. :skull:"
 
 def help_print():
     help_message = """
@@ -49,3 +50,8 @@ The database starts empty and as you go along, you can add more information to c
         O = Outpost/S = Seapost/F = Skeleton Fort/W = Wild island (everything else)\n
     """
     return help_message
+
+def about_print():
+    about_message = """
+    This bot was made by Allexio#0001 in python 3. Feel free to request features or give (constructive) feedback @ x.allexio@gmail.com"""
+    return about_message
