@@ -3,7 +3,7 @@ A sea of thieves discord bot that lets you store information in a database and t
 ## installation:
 ### prerequisites:
 * latest python3
-* latest discord.py
+* latest discord.py (```pip install discord.py```)
 ### how to use
 * create a bot on discord https://discordapp.com/developers/applications/
 * make a user for that bot you create
